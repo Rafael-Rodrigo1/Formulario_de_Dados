@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<HTML lang="PT-BR">
+<Head>
+  <meta charset="UTF-8">
+  <title>JOGO</title>
+<style>
+body {
+  background-image: linear-gradient(to right ,DodgerBlue , DeepSkyBlue);
+  }
+  
+section {
+  position: relative;
+  background-color: transparent;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2rem;
+}
+
+form {
+  border: 2px solid white;
+  margin:20px 10px  20px 10px;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 2px 1px 1px white;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+input#txt1 {
+  color: white;
+  height: 30px;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-color: white;
+  margin-bottom: 40px;
+}
+input#mail1 {
+  color: white;
+  height: 30px;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-color: white;
+  margin-bottom: 50px;
+}
+input#senha1 {
+  color: white;
+  height: 30px;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-color: white;
+  margin-bottom: 50px;
+}
+input#senha2 {
+  color: white;
+  height: 30px;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-color: white;
+  margin-bottom: 50px;
+}
+input#login1 {
+  background-color: white;
+  margin-top: 30px;
+  padding: 10px;
+  border-color: white;
+ border-radius: 30px;
+ width: 200px;
+ cursor: pointer;
+}
+input#check1 {
+  justify-items: left;
+  margin-top: 30px;
+}
+p {
+  color: white;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+ <section>
+   <form onsubmit="clicar()">
+     <h4>REGISTRA-SE</h4>
+     <p>Nome Completo</p>
+     <input type="text" name="txt1" id="txt1" placeholder="Digite seu Nome">
+     <p>Email</p>
+     <input type="email" name="mail1" id="mail1" placeholder="Digite seu Email">
+     <p>Senha</p>
+     <input type="password" name="senha1" id="senha1" size="8" maxlength="8" placeholder="8 Digitos" required onchange="clique()">
+     <p>Confirmar Senha</p>
+     <input type="password" name="senha2" id="senha2" size="8" maxlength="8" placeholder="8 Digitos" required onchange="clique()"><br>
+     <input type="checkbox" name="check1" id="check1"> Deseja receber notificações em seu  Email<br></br>
+     <input type="submit" name="login1" id="login1" value="Registrar">
+   </form>
+  </section>
+</body>
+<script>
+function clique() {
+const sen1 = document.getElementById('senha1')
+const sen2 = document.getElementById('senha2')
+
+if (sen2.value === sen1.value) {
+  sen2.setCustomValidity('')
+} else {
+  sen2.setCustomValidity('senha diferem')
+  }
+}
+function clicar() {
+alert('Registro realizado com sucesso')
+}
+
+</script>
+</HTML>
