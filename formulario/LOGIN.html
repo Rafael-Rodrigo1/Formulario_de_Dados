@@ -3,90 +3,7 @@
 <Head>
   <meta charset="UTF-8">
   <title>JOGO</title>
-<style>
-body {
-  background-image: linear-gradient(to right ,DodgerBlue , DeepSkyBlue);
-  }
-  
-section {
-  position: relative;
-  background-color: transparent;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 2rem;
-}
-
-form {
-  border: 2px solid white;
-  margin:20px 10px  20px 10px;
-  text-align: center;
-  justify-content: center;
-  color: white;
-  box-shadow: 2px 1px 1px white;
-  border-radius: 20px;
-  padding: 20px;
-}
-
-input#txt1 {
-  color: white;
-  height: 30px;
-  background: none;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom-color: white;
-  margin-bottom: 40px;
-}
-input#mail1 {
-  color: white;
-  height: 30px;
-  background: none;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom-color: white;
-  margin-bottom: 50px;
-}
-input#senha1 {
-  color: white;
-  height: 30px;
-  background: none;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom-color: white;
-  margin-bottom: 50px;
-}
-input#senha2 {
-  color: white;
-  height: 30px;
-  background: none;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom-color: white;
-  margin-bottom: 50px;
-}
-input#login1 {
-  background-color: white;
-  margin-top: 30px;
-  padding: 10px;
-  border-color: white;
- border-radius: 30px;
- width: 200px;
- cursor: pointer;
-}
-input#check1 {
-  justify-items: left;
-  margin-top: 30px;
-}
-p {
-  color: white;
-  text-align: center;
-}
-</style>
+  <link rel="Stylesheet" href="style_Dados.css">
 </head>
 <body>
  <section>
@@ -105,20 +22,6 @@ p {
    </form>
   </section>
 </body>
-<script>
-function clique() {
-const sen1 = document.getElementById('senha1')
-const sen2 = document.getElementById('senha2')
-
-if (sen2.value === sen1.value) {
-  sen2.setCustomValidity('')
-} else {
-  sen2.setCustomValidity('senha diferem')
-  }
-}
-function clicar() {
-alert('Registro realizado com sucesso')
-}
-
+<script src="Dados.js">
 </script>
 </HTML>
